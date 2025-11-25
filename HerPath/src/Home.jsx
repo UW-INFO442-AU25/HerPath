@@ -31,6 +31,12 @@ function Home() {
             >
               Log In
             </a>
+            <a
+              href="/settings"
+              className="text-gray-700 hover:text-pink-500 transition-colors text-sm sm:text-base font-medium"
+            >
+              Settings
+            </a>
             <button
               className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 sm:px-6 py-2 rounded-full hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base font-semibold"
               aria-label="Start Learning"
