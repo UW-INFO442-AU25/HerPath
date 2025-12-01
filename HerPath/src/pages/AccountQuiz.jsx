@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
 import { GradientBackground } from "@/components/ui/gradient-background";
 import HeaderComponent from "../components/HeaderComponent";
 
@@ -99,7 +98,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="in-middle-school"
-                                        {...register("education"), {required: true}}
+                                        {...register("education", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Enrolled in middle school (6-8th grade)
@@ -109,7 +108,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="in-high-school"
-                                        {...register("education"), {required: true}}
+                                        {...register("education", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Enrolled in high school (9th-12th grade)
@@ -119,7 +118,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="hs-incomplete"
-                                        {...register("education"), {required: true}}
+                                        {...register("education", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Did not complete high school
@@ -129,7 +128,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="completed-hs"
-                                        {...register("education"), {required: true}}
+                                        {...register("education", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Completed high school
@@ -139,7 +138,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="higher-education"
-                                        {...register("education"), {required: true}}
+                                        {...register("education", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Enrolled in higher education (university, trade school, etc.)
@@ -156,7 +155,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="in-higher-ed"
-                                        {...register("ed-plan"), {required: true}}
+                                        {...register("ed-plan", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Yes, I'm already enrolled in higher education
@@ -166,7 +165,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="planning-for-higher-ed"
-                                        {...register("ed-plan"), {required: true}}
+                                        {...register("ed-plan", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Yes, I plan to go to higher education
@@ -176,7 +175,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="no"
-                                        {...register("ed-plan"), {required: true}}
+                                        {...register("ed-plan", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     No
@@ -186,7 +185,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="unsure"
-                                        {...register("ed-plan"), {required: true}}
+                                        {...register("ed-plan", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     I'm not sure yet
@@ -203,7 +202,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="job"
-                                        {...register("income"), {required: true}}
+                                        {...register("income", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Yes, I have a job
@@ -213,7 +212,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="allowance"
-                                        {...register("income"), {required: true}}
+                                        {...register("income", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Yes, I have an allowance
@@ -223,7 +222,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="supports-family"
-                                        {...register("income"), {required: true}}
+                                        {...register("income", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     Yes, but most/all of my income supports my family
@@ -233,7 +232,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="birthday-holiday"
-                                        {...register("income"), {required: true}}
+                                        {...register("income", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     No, only birthday/holiday money
@@ -243,7 +242,7 @@ export default function AccountQuiz() {
                                     <input
                                         type="radio"
                                         value="no"
-                                        {...register("income"), {required: true}}
+                                        {...register("income", {required: true})}
                                         className="accent-pink-500"
                                     />
                                     No
